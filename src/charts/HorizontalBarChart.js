@@ -18,9 +18,14 @@ const data = [
 
 // sorting data
 
-data.sort(function (b, a) {
+
+  data.sort(function (b, a) {
     return a.retweet_count - b.retweet_count;
-});
+  });
+
+
+
+
 
 
 export default class Example extends PureComponent {
@@ -41,6 +46,7 @@ export default class Example extends PureComponent {
                 <Tooltip />
                 <Legend />
                 <Bar dataKey="retweet_count" fill="#0f419a" />
+                
             </BarChart>
         );
     }

@@ -8,6 +8,8 @@ import Sidebar from '../Sidebar';
 
 import HorizontalBarChart from '../charts/HorizontalBarChart';
 
+import ToggleBtn from '../buttons/ToggleBtn';
+
 
 
 function DasbhoardOne() {
@@ -26,10 +28,16 @@ function DasbhoardOne() {
             <Row>
               <Col>
                 <Card>
+                  
                   <HorizontalBarChart />
+
                   <Card.Body>
                     <Card.Text>
+                      
                       Most Retweeted By
+                       
+                      <ToggleBtn />
+                       
                     </Card.Text>
                   </Card.Body>
                 </Card>

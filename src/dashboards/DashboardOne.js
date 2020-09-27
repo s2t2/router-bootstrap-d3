@@ -29,7 +29,7 @@ function DasbhoardOne() {
                   <HorizontalBarChart />
                   <Card.Body>
                     <Card.Text>
-                      Line Chart
+                      Most Retweeted By
                     </Card.Text>
                   </Card.Body>
                 </Card>

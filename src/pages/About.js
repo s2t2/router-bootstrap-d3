@@ -6,44 +6,33 @@ import Nav from 'react-bootstrap/Nav';
 import Card from 'react-bootstrap/Card'
 import Sidebar from '../Sidebar';
 
-import HorizontalBarChart from '../charts/HorizontalBarChart';
-
-import ToggleBtn from '../buttons/ToggleBtn';
-
-
-
-function DasbhoardOne() {
+function About() {
   return (
     <Container fluid className="no-padding">
       <Row>
         <Col sm={2}>
 
           <Sidebar />
-          
+
         </Col>
         <Col sm={10}>
 
           <Container fluid className="mt-70">
-            <h3 className="herotitle">Dashboard One</h3>
+            <h3 className="herotitle">About</h3>
             <Row>
               <Col>
                 <Card>
-                  
-                  <HorizontalBarChart />
 
                   <Card.Body>
                     <Card.Text>
-                      
-                      Most Retweeted By
-                      
-                       
+                      Line Chart
                     </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
-             
+              
             </Row>
-           
+            
           </Container>
 
         </Col>
@@ -53,4 +42,4 @@ function DasbhoardOne() {
   );
 }
 
-export default DasbhoardOne;
+export default About;

@@ -12,7 +12,7 @@ import Card from 'react-bootstrap/Card';
 function Mainmenu() {
     return (
         <Navbar fixed="top" bg="light">
-            <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand href="/">Impeachment Tweet Analysis</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

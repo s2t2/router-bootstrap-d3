@@ -60,11 +60,13 @@ body {
   padding-left: 10px;
   color: white;
   text-decoration: none !important;
+ 
 }
 
 .sidebarWrapper a.active {
   text-decoration: none;
   background: #B22234;
+  transition: 1s all ease;
 }
 
 
@@ -165,6 +167,17 @@ body {
   top: 0;
   background-color: #002868;
 }
+
+
+.mt-70 {
+  margin-top: 20px;
+}
+
+.sidebarWrapper {
+  margin-top: 60px;
+}
+
+
 
 }
 

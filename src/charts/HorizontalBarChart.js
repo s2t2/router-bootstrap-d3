@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import {
-    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Label
 } from 'recharts';
 
 const data = [
@@ -19,9 +19,9 @@ const data = [
 // sorting data
 
 
-  data.sort(function (b, a) {
+data.sort(function (b, a) {
     return a.retweet_count - b.retweet_count;
-  });
+});
 
 
 
@@ -29,25 +29,28 @@ const data = [
 
 
 export default class Example extends PureComponent {
-    static jsfiddleUrl = 'https://jsfiddle.net/alidingling/q4eonc12/';
 
     render() {
         return (
-            <BarChart
-                width={900}
-                height={600}
-                data={data}
-                layout="vertical"
-                margin={{ top: 5, right: 30, left: 100, bottom: 5 }}
-            >
-                <XAxis type="number" dataKey="retweet_count" />
-                <YAxis type="category" dataKey="retweeted_user_screen_name" />
-                <CartesianGrid strokeDasharray="1 1" />
-                <Tooltip />
-                <Legend />
+            
+                <BarChart
+                    width={900}
+                    height={600}
+                    data={data}
+                    layout="vertical"
+                    margin={{ top: 5, right: 30, left: 100, bottom: 5 }}
+                >
+                    <XAxis type="number" dataKey="retweet_count" />
+                    <YAxis type="category" dataKey="retweeted_user_screen_name" />
+                    <CartesianGrid strokeDasharray="1 1" />
+                    <Tooltip />
+                    <Legend />
                 <Bar dataKey="retweet_count" fill="#0f419a" />
                 
-            </BarChart>
+                
+
+                </BarChart>
+        
         );
     }
 }

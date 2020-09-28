@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import About from "./About"
+import About from "./pages/About"
 import Mainmenu from "./Mainmenu"
 import DashboardOne from "./dashboards/DashboardOne"
 import DashboardTwo from "./dashboards/DashboardTwo"
@@ -46,7 +46,7 @@ function App() {
 
 
 const Home = () => (
-  <Container fluid className="no-padding mt-70">
+  <Container fluid className="no-padding">
     <Row>
       <Col sm={2}>
 
@@ -55,9 +55,23 @@ const Home = () => (
       </Col>
       <Col sm={10}>
 
-        <div>
-          <h2 className="herotitle">Home Page</h2>
-        </div>
+        <Container fluid className="mt-70">
+          <h3 className="herotitle">Home</h3>
+          <Row>
+            <Col>
+              <Card>
+
+                <Card.Body>
+                  <Card.Text>
+                    Line Chart
+                    </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+          </Row>
+
+        </Container>
 
       </Col>
     </Row>
